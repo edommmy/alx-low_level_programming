@@ -1,4 +1,4 @@
-.#include <stdio.h>
+#include <stdio.h>
 /**
  *main - Entry point
  *printing base 10 numbers starting from 0

@@ -1,0 +1,13 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+ *main - Entry point
+ *printing out random numbers and then playing with more codes
+ *Return: 0 after executing code
+ */
+int main(void)
+{
+  int n;
+  srand(time(0));
+  n = rand

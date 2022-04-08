@@ -3,32 +3,32 @@
 #include <stdio.h>
 
 /**
-*main - Entry point
-*printing out random numbers and then playing with more codes
-*Return: 0 after executing code
-*/
+ *main - Entry point
+ *printing out random numbers and then playing with more codes
+ *Return: 0 after executing code
+ */
 int main(void)
 {
 int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
-if (n > 0)
-{
-printf("%i is positive\n", n);
-}
-
-else if (n == 0)
+  
+if (n == 0)
 {
 printf("%i is zero\n", n);
 }
- 
-else (n < 0)
+
+else if (n < 0)
 {
 printf("%i is negative\n", n);
 }
-
+ 
+else
+{
+printf("%i is positive\n");
+}
+  
 return (0);
-
+  
 }

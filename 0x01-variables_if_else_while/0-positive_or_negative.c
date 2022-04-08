@@ -4,8 +4,8 @@
 
 /**
  *main - Entry point
- *printing out random numbers and then playing with more codes
- *Return: 0 after executing code
+ *printing out random numbers and then states whather positive, negative or zero
+ *Return: 0 Always
  */
 int main(void)
 {
@@ -26,7 +26,7 @@ printf("%i is negative\n", n);
  
 else
 {
-printf("%i is positive\n");
+  printf("%i is positive\n", n);
 }
   
 return (0);

@@ -9,8 +9,8 @@ int main(void)
 int dgt;
 for (dgt = 0; dgt <= 9; dgt++)
 {
-putchar((num % 10) + '0');
-if (num == 9)
+putchar((dgt % 10) + '0');
+if (dgt == 9)
 continue;
 putchar(',');
 putchar(' ');

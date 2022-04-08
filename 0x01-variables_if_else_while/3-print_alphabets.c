@@ -2,7 +2,7 @@
 /**
  *main - Entry point
  *lowercase first and then uppercase
- *Return: 0 Always
+ *Return: Always
  */
 int main(void)
 {
@@ -18,3 +18,5 @@ putchar(CH);
 }
 putchar('\n');
 return (0);
+}
+

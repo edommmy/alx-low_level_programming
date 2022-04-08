@@ -9,7 +9,7 @@ int main(void)
 int dgt1, dgt2;
 for (dgt1 = 0; dgt1 <= 98; dgt1++)
 {
-for (dgt2 = dgt1 + 1; dgt2 <= 99; dgt++)
+for (dgt2 = dgt1 + 1; dgt2 <= 99; dgt2++)
 {
 putchar((dgt1 / 10) + '0');
 putchar((dgt1 % 10) + '0');

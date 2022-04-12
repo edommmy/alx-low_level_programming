@@ -6,14 +6,14 @@
  */
 void print_alphabet_x10(void)
 {
-char alphabet;
-char alphabet_x10;
-for (alphabet_x10 < 10)
+int alphabet_x10 = 0, alphabet;
+while (alphabet_x10 < 10)
 {
 for (alphabet = 97; alphabet <= 122; alphabet++)
 {
 _putchar(alphabet);
 }
-}
+ alphabet_x10++;
 _putchar('\n')
+}
 }

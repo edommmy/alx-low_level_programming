@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_sign - return 0 for 0, return 1 for positive and return -1 for negative 
+ *print_sign - return 0 for 0, 1 for positive and -1 for negative
  *@n: int to be pronted
  *Return: 0 Always
  */

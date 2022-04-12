@@ -9,7 +9,7 @@ int main(void)
 {
 int mtf, r;
 for (mtf = 0; mtf < 1024; mtf++)
-if(mtf % 3 == 0 || mtf % 5 == 0)
+if (mtf % 3 == 0 || mtf % 5 == 0)
 r += mtf;
 printf("%d\n", r);
 return (0);

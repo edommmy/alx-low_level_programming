@@ -13,7 +13,7 @@ for (alphabet = 97; alphabet <= 122; alphabet++)
 {
 _putchar(alphabet);
 }
- alphabet_x10++;
-_putchar('\n')
+alphabet_x10++;
+_putchar('\n');
 }
 }

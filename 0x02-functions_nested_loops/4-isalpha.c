@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_isalpha(int c) - character comparison
+ *_isalpha - character comparison
  *@c: int to be pronted
  *Return: 0 Always
  */

@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * add - adds two given integers
+ * A function that adds two integers and returns the result
+ * Return: 0 Always
+ */
+int add(int b, int g)
+{
+  return (b + g);
+}

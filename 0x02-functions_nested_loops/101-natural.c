@@ -7,17 +7,10 @@
  */
 int main(void)
 {
-  int mt;
-  int mf;
-  sm = mf + mt;
-
-  for (mt % 3 == 0; mt > 0; mt < 1024)
-    {
-      for (mf % 5 == 0; mf > 0; mf < 1024)
-	{
-	  printf("%d", sm);
-	}
-    }
-  _putchar('\n')
-    return (0);
+int mtf, r;
+for (mtf = 0; mtf < 1024; mtf++)
+if(mtf % 3 == 0 || mtf % 5 == 0)
+r += mtf;
+printf("%d\n", r);
+return (0);
 }

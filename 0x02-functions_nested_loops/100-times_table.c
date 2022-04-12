@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_time_table - print time table for n
+ *print_times_table - print times table for n
  *@n: multiplication table request
  *Return: 0 Always
  */
@@ -34,12 +34,12 @@ _putchar((r % 10) + '0');
 else if (r >= 100 && h != 0)
 {
 _putchar((r / 100) + '0');
-_putchar((r / 10) + '0');
+_putchar((r / 10) % 10 + '0');
 _putchar((r % 10) + '0');
 }
 else
 {
-_putchar((r%10) + '0');
+_putchar((r % 10) + '0');
 }
 }
 _putchar('\n');

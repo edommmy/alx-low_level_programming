@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_abs - absolute value
- *@n: int to be pronted
- *Return: 0 Always
+ * _abs - absolute value
+ * @n: int to be pronted
+ * Return: 0 Always
  */
-int _abs(int)
+int _abs(int n)
 {
 if (n < 0)
 {

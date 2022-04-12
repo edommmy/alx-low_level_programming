@@ -1,13 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *print_last_digit - last digit
  *@n : int to be pronted
  *Return: 0 Always
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 int last_digit;
+ 
 if (n < 0)
 {
 last_digit = (-1 * (n % 10));

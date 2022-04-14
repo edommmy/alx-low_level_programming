@@ -5,15 +5,15 @@
  * 
  * Return: 0 Always
  */
- /* prints from 1 to 100 + a new line*/
- /* multiples of 3 = Fizz */
- /* multiples of 5 = Buzz */
- /* multiples of 3 and 5 = FizzBuzz */
- /* everything should be separated by space */
+/* prints from 1 to 100 + a new line*/
+/* multiples of 3 = Fizz */
+/* multiples of 5 = Buzz */
+/* multiples of 3 and 5 = FizzBuzz */
+/* everything should be separated by space */
 int main(void)
 {
-int i;
-for (i = 1; i < 101; i++)
+int i = 1;
+while (i < 101)
 {
 if (i % 3 == 0)
 {
@@ -35,6 +35,7 @@ if (i != 100)
 {
 printf(" ");
 }
+i++;
 }
 printf("\n");
 return (0);

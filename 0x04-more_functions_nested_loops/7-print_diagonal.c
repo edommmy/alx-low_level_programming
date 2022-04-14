@@ -13,9 +13,9 @@ for (i = 0; i < n; i++)
 {
 for (spc = 0; spc < i; spc++)
 {
-putchar(' ');
+_putchar(' ');
 }
-putchar('\\');
-putchar('\n');
+_putchar('\\');
+_putchar('\n');
 }
 }

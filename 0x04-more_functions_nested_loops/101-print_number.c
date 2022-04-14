@@ -3,9 +3,7 @@
 #include <stdlib.h>
 /**
  * print_number - like a hello world
- *
- * @n: params an integer
- *
+ * @n: takes an integer
  * No return
  */
 void print_number(int n)

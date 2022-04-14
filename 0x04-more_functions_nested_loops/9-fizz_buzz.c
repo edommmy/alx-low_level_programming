@@ -1,35 +1,31 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 /**
- * main - prints 1 to 100 and words based on multiplicity
- * 
- * Return: 0 Always
+ * main - Fizz for multiples of 3 and Buzz for multiples of 5 FizzBuzz for both
+ *
+ *
+ * Return: Always 0
  */
-/* prints from 1 to 100 + a new line*/
-/* multiples of 3 = Fizz */
-/* multiples of 5 = Buzz */
-/* multiples of 3 and 5 = FizzBuzz */
-/* everything should be separated by space */
 int main(void)
 {
 int i = 1;
 while (i < 101)
 {
-if (i % 3 == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-printf("%s ", "Fizz");
+printf("%s", "FizzBuzz");
+}
+else if (i % 3 == 0)
+{
+printf("%s", "Fizz");
 }
 else if (i % 5 == 0)
 {
-printf("%s ", "Buzz");
-}
-else if (i % 5 == 0 && i % 3 == 0)
-{
-printf("%s ", "FizzBuzz");
+printf("%s", "Buzz");
 }
 else
 {
-printf("%d ", i);
+printf("%d", i);
 }
 if (i != 100)
 {

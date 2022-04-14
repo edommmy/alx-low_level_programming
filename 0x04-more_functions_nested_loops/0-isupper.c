@@ -6,12 +6,9 @@
 */
 int _isupper(int c)
 {
-while (c >= 65 && c <= 122 && c != 67)
+while (c >= 65 && c <= 90)
 {
+return (1);
+}
 return (0);
-}
-while (c = 67)
-{
-return(1);
-}
 }

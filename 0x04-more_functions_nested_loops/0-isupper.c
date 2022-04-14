@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*main - capital c or not
-*Just testing out results
+*_isupper - Check whether c is capital or not
+*@c: Integer representing a character
 *Return: 0 Always
 */
 

@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_number - like a hello world
+ * print_number - prints integer
  * @n: takes an integer
  * Return: void
  */

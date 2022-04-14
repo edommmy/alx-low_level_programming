@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_square - prints a square
- * @size: size of the square
+ * main - prints 1 to 100 and words based on multiplicity
+ * 
  * Return: void
  */
  /* prints from 1 to 100 + a new line*/

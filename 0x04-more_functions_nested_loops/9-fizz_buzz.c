@@ -3,7 +3,7 @@
 /**
  * main - prints 1 to 100 and words based on multiplicity
  * 
- * Return: void
+ * Return: 0
  */
  /* prints from 1 to 100 + a new line*/
  /* multiples of 3 = Fizz */
@@ -31,5 +31,12 @@ else
 {
 printf("%d ", i);
 }
+if (i != 100)
+{
+printf(" ");
 }
+i++;
+}
+printf("\n");
+return (0);
 }

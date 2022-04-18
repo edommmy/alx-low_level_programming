@@ -1,20 +1,18 @@
 #include "main.h"
 /**
  *puts2 - prints every other char of a string
- *@str: type
- *
+ *@str: a pointer to an int
+ *Return: Always 0
  */
 void puts2(char *str)
 {
-int x, y = 0;
-while (str[x] != '\0')
+int x;
+for (a = 0; str[x] != '\0'; x++)
 {
-x++;
-}
-while (y < x)
+if (x % 2 == 0)
 {
-_putchar(str[y]);
-y = y + 2;
+_putchar (str[x])
 }
 _putchar('\n');
 }
+  

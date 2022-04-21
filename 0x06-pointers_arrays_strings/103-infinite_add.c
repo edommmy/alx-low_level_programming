@@ -1,45 +1,47 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_buffer - prints buffer
- * @b: buffer
- * @size: size
- * Return: void
+ *infinite_add - add two numbers.
+ *
+ *@n1: first number.
+ *@n2: second number.
+ *@r: result.
+ *@size_r: result size.
+ *Return: the addition of n1 and n2.
  */
-void print_buffer(char *b, int size)
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int o, j, i;
-o = 0;
-if (size <= 0)
-{
-printf("\n");
-return;
-}
-while (o < size)
-{
-j = size - o < 10 ? size - o : 10;
-printf("%08x: ", o);
-for (i = 0; i < 10; i++)
-{
-if (i < j)
-printf("%02x", *(b + o + i));
-else
-printf("  ");
-if (i % 2)
-{
-printf(" ");
-}
-}
-for (i = 0; i < j; i++)
-{
-int c = *(b + o + i);
-if (c < 32 || c > 132)
-{
-c = '.';
-}
-printf("%c", c);
-}
-printf("\n");
-o += 10;
-}
+	int add = 0, len1, len2, i, j;
+
+	for (len1 = 0; n1[len1]; len1++)
+	;
+	for (len2 = 0; n2[len2]; len2++)
+	;
+	if (len1 > size_r || len2 > size_r)
+		return (0);
+	len1--;
+	len2--;
+	size_r--;
+	for (i = 0; i < size_r; i++, len1--, len2--)
+	{
+		if (len1 >= 0)
+			add += n1[len1] - '0';
+		if (len2 >= 0)
+			add += n2[len2] - '0';
+		if (len1 < 0 && len2 < 0 && add == 0)
+			break;
+		r[i] = add % 10 + '0';
+		add /= 10;
+	}
+	r[i] = '\0';
+	if (len1 >= 0 || len2 >= 0 || add)
+		return (0);
+	for (i--, j = 0; i > j; i--, j++)
+	{
+		add = r[i];
+		r[i] = r[j];
+		r[j] = add;
+	}
+	return (r);
 }

@@ -16,7 +16,7 @@ return (pmnum(a, b + 1));
 }
 /**
  *is_prime_number - returns 1 if the input integer is a prime number
- *@n - tested int
+ *@n: tested int
  *Return: 1 On succes and 0 if not prime
  */
 int is_prime_number(int n)

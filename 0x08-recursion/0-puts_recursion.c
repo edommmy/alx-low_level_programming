@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_puts_recursion - Prints a string 
+ *_puts_recursion - Prints a string
  *@s: string
  *Return: 1 On Success
  *On error, -1 is returned, and errno is set appropriately

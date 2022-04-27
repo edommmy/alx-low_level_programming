@@ -10,7 +10,7 @@ int sqrNum(int a, int b)
 {
 if (a == (b * b))
 return (b);
-else if(a > ( b * b))
+else if (a > (b * b))
 return (sqrNum(a, b + 1));
 else
 return (-1);

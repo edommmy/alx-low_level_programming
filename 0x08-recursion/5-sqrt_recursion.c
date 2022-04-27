@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * sqrNum - function does the sqr root of a number
- * @x: number input
- * @i: variable
+ * @a: number input
+ * @b: variable
  * Return: 1 On success
  * On error, -1 is returned, and errno is set appropriately
  */
@@ -10,7 +10,7 @@ int sqrNum(int a, int b)
 {
 if (a == (b * b))
 return (b);
-else if (a > ( b * b))
+else if(a > ( b * b))
 return (sqrNum(a, b + 1));
 else
 return (-1);

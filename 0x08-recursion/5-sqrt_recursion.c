@@ -1,19 +1,26 @@
 #include "main.h"
 /**
- *_sqrt_recursion - returns the natural square root of a number
- *@n - int
- *Return: 1 On success
- *On error, -1 is returned, and errno is set appropriately
+ * sqrNum - function does the sqr root of a number
+ * @a: number input
+ * @b: variable
+ * Return: 1 On success
+ * On error, -1 is returned, and errno is set appropriately
  */
 int sqrNum(int a, int b)
 {
-  if (x == (b * b))
-     return (b);
-else if (a > ( b * b))
+if (a == (b * b))
+return (b);
+else if (a > (b * b))
 return (sqrNum(a, b + 1));
 else
 return (-1);
 }
+/**
+ * _sqrt_recursion - function returns square root of a number
+ * @n: number
+ * Return: int
+ * On error, -1 is returned, and errno is set appropriately
+ */
 int _sqrt_recursion(int n)
 {
 if (n == 0)

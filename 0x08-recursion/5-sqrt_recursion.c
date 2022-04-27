@@ -8,8 +8,8 @@
  */
 int sqrNum(int a, int b)
 {
-  if (x == (b * b))
-     return (b);
+if (a == (b * b))
+return (b);
 else if (a > ( b * b))
 return (sqrNum(a, b + 1));
 else

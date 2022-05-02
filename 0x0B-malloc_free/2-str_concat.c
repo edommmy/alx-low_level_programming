@@ -18,10 +18,10 @@ for (; s2[y]; y++)
 s = malloc(sizeof(char) * (x + y + 1));
 if (s == NULL)
 return (NULL);
-while (z < i)
+while (z < x)
 {
 s[z] = s1[z];
-k++;
+z++;
 }
 while (z < x + y)
 {

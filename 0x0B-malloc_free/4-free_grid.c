@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *free_grid - frees a 2D grid that had been created on
- *the last project
+ *free_grid - frees a 2D grid that had been created by
+ *the alloc_grid function
  *@grid: matrix double pointer 
  *@height: rows (pointer)
  *Return: void

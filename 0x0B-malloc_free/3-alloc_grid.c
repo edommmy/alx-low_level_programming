@@ -7,23 +7,22 @@
  */
 int **aloc_grid(int width, int height)
 {
-  int **s;
-  int x, y, z, fr;
-  fr = 0;
-  if (width <= 0 || height <= 0)
-    return (0);
-
-  s = malloc(height * sizeof(int *));
-  if (s == 0)
-    return (0);
-  for (x = 0; x < height; x++)
-    {
-      *(s + x) = malloc(width * sizeof(int));
-      if (*(s + x) == 0)
-	{
-	  fr = 1;
-	  break;
-	}
+int **s;
+int x, y, z, fr;
+fr = 0;
+if (width <= 0 || height <= 0)
+return (0);
+s = malloc(height * sizeof(int *));
+if (s == 0)
+return (0);
+for (x = 0; x < height; x++)
+{
+*(s + x) = malloc(width * sizeof(int));
+if (*(s + x) == 0)
+{
+fr = 1;
+break;
+}
 for (y = 0; y < width; y++)
 {
 s[x][y] = 0;

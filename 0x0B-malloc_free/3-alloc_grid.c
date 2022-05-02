@@ -5,7 +5,7 @@
  *@height: rows
  *Return: Double Pointer
  */
-int **aloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 int **s;
 int x, y, z, fr;

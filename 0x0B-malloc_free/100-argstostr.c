@@ -27,7 +27,7 @@ for (y = 0; y < ac; y++)
 lt = 0;
 while (av[y][lt])
 {
-*(s + k) = av[y][lt];
+*(s + z) = av[y][lt];
 z++;
 lt++;
 }

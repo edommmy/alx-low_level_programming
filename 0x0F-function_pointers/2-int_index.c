@@ -19,6 +19,6 @@ for (i = 0; i < size; i++)
 if (cmp(array[i]))
 return (i);
 }
-Con* If element not found */
+/* If element not found */
 return (-1);
 }
